@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Owner Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        Warehouse Owner Portal
+    </header>
+
+    <div class="container">
+        <h2>Update Warehouse Details</h2>
+        <form id="warehouseForm">
+            <label class="form-label">Location:</label>
+            <input type="text" id="location" placeholder="Enter location" required>
+
+            <label class="form-label">Capacity:</label>
+            <input type="text" id="capacity" placeholder="Enter capacity" required>
+
+            <label class="form-label">Owner Name:</label>
+            <input type="text" id="owner" placeholder="Enter owner name" required>
+
+            <label class="form-label">Contact Email:</label>
+            <input type="email" id="contact" placeholder="Enter contact email" required>
+
+            <label class="form-label">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter phone number" required>
+
+            <button type="button" class="btn btn-primary" onclick="updateWarehouse()">Update Warehouse</button>
+        </form>
+
+        <h2>Add Broken Pallets for Sale</h2>
+        <form id="palletForm">
+            <label class="form-label">Pallet Description:</label>
+            <input type="text" id="palletDescription" placeholder="Enter pallet description" required>
+
+            <label class="form-label">Price:</label>
+            <input type="text" id="palletPrice" placeholder="Enter price" required>
+
+            <label class="form-label">Upload Pallet Photo:</label>
+            <input type="file" id="palletPhoto" accept="image/*" required>
+
+            <button type="button" class="btn btn-success" onclick="addPalletForSale()">Add Pallet for Sale</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Farmers and Warehouses Portal</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
